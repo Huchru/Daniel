@@ -1,0 +1,135 @@
+Cyber security Journal
+Table of content
+1. Commands List
+2.Network 
+Commands list
+`while true; do`
+ -Purpose: repeat a certain commands
+ -Usage: “while true; do” for repeating a command, “while true; do” for repeating a answer until it find the correct answer.
+ -Notes: Essential to repeat a commands
+`zenity` 
+ -Purpose: to make a pop-up text
+ -Usage: “zenity -error” for creating an error pop-up text, “zenity -info” for creating an info pop up text
+ -Notes: Essential to make a pop-up text
+`nano`
+ -Purpose: use to make and edit a txt document
+ -Usage: “nano” for making and editing txt document
+ -Notes: Basically, use to create and edit txt document
+`ls`
+ -Purpose: Lists the contents of a directory.
+ -Usage: `ls` for basic listing, `ls -l` for detailed listing, `ls -a` to include hidden files.
+ -Notes: Essential for quickly viewing what's in the current directory.
+`cd`
+ -Purpose: Changes the current directory.
+ -Usage: `cd [directory path] ` to move to a specific directory, `cd ...` to move up one directory level, `cd` or `cd ~` to return to the home directory.
+ -Notes: Most used for navigating through the filesystem.
+`pwd`
+ -Purpose: Prints the current directory path.
+ -Usage: `pwd` to display the full path of the current directory.
+ -Notes: Useful for confirming your current location in the filesystem.
+`mkdir`
+ -Purpose: Creates a new directory.
+ -Usage: `mkdir [directory name] ` to create a new directory in the current location.
+ -Notes: Handy for organizing files into new folders.
+`rmdir`
+ -Purpose: Removes a directory.
+ -Usage: `rmdir [directory name] ` to delete an empty directory.
+ -Notes: Used for cleaning up and removing unused directories. Note that the directory must be empty.
+`dir`
+ -Purpose: to check a directory
+ -Usage: `dir [directory name] ` to check a directory.
+ -Notes: Used for checking any directories.
+`chmod`
+ -Purpose: to give a permission
+ -Usage: `chmod +x` adds execute permission, `chmod -x`
+removes execute permission, `chmod u` stands for the user/owner of the file, `chmod g` stands for the group associated with the file, `chmod o` stands for others, `chmod a` stands for all `chmod u+x` adds execute permission for the user/owner only, `chmod go-x` removes execute permission for the group and others.
+ -Notes: These are some of the permission commands
+`bash ./loop.sh`
+ -Purpose: to run a commands from sublime text.
+ -Usage: run a commands from sumblime text
+ -Notes: just to run a complex command from sumblime text
+`rename-item a b`
+ -Purpose: to rename a file or a folder
+ -Usage: rename a file or a folder
+ -Notes: a is the old file or folder name and b is were you type the new name
+`clear`
+ -Purpose: just to clear your work if it messing
+ -Usage: clearing messing work
+ -Notes: Use wisely
+`ifconfig`
+ -Purpose: to assign an address to a network interface and to configure or display the current network interface configuration information.
+ -Notes: it for assign and configure the network interface
+`traceroute`
+
+Networking
+`Gateway`
+  -A gateway is an input or an output of the connection to the network
+`IP address`
+  -This is a numerical label assigned to each device connected to a computer network.
+`Subnet Masks`
+  -This helps a computer or device figure out which part of an IP address is used for the network and which part is used for devices within that network
+`DNS (Domain Name System)`
+  -This is a phonebook for the internet.
+`Network Switch`
+  -This is a device used in computer networks to connect multiple devices within a local area network
+`Network router`
+  -This is a device that connects different networks together, such as your local home network and the internet.
+`Access points`
+  -This is a device that allows wireless devices to connect to a wired network using Wi-Fi.
+`MAC address`
+  -This is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment.
+`Ports in network addressing`
+  -Ports allow multiple services or applications to run on a single device while distinguishing between them.
+`WAN (Wide Area Network.)`
+  -It is a type of computer network that covers a broad area, such as a city, country, or even spans across continents.
+`LAN (Local Area Network.)`
+  -This is a network of connected computers, devices, and resources within a relatively small geographic area, such as a home, office, or campus.
+`PAN (Personal Area Network.)`
+  -This is a small network for personal devices, typically within the immediate reach of an individual.
+`MAN (Metropolitan Area Network.)`
+  -This is a type of network that covers a larger geographical area than a local area network (LAN) but is smaller than a wide area network (WAN).
+`VPN (Virtual Private Network.)`
+  -It helps protect your online privacy by creating a safe connection between your device and the internet, especially when you're using public Wi-Fi networks.
+
+Git commands
+•Initialize Repository:bash -[git init]
+•Configure Git:bash -[git config --global user.name "Your Name"]
+bash -[git config --global user.email "youremail@example.com"]
+•Check Status:bash -[git status]
+•Stage Files:bash -[git add filename]
+bash -[git add .]
+•Commit Changes:bash -[git commit -m "message"]
+•View Log:bash -[git log]
+•Create and Switch Branch:bash -[git checkout -b branch-name]
+•Switch Branch:bash -[git checkout branch-name]
+•Merge Branches:bash -[git merge branch-name]
+•Delete Branch:bash -[git branch -d branch-name]
+•Undo Changes in Working Directory:
+ oUsing git restore(newer versions):bash -[git restore filename]
+ oUsing git checkout(older versions):bash -[git checkout --filename]
+•Remove Cached File:bash -[git rm --cached filename]
+•Set Alias:bash -[git config --global alias.alias-name command]
+•Tag a Commit:bash -[git tag -a v1.0 -m "message"]
+•Reset Commits:bash -[git reset --soft HEAD~1]
+bash -[git reset --hard HEAD~1]
+
+Random codes 
+traceroute 
+tracepath 
+ping 
+netstat 
+ss
+dig 
+nslookup 
+route  
+host 
+arp 
+iwconfig 
+hostname 
+curl or wget 
+mtr 
+whois 
+ifplugstatus 
+iftop 
+tcpdum
+Notes
