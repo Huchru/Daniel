@@ -132,6 +132,8 @@ Bash scripting
     bind -P: List all shortcuts in the current Bash shell (persistent across sessions).
     Scripting
     & (ampersand): Run a command in the background.
+
+
     
 
 Git commands
