@@ -91,6 +91,49 @@ Networking
 `VPN (Virtual Private Network.)`
   -It helps protect your online privacy by creating a safe connection between your device and the internet, especially when you're using public Wi-Fi networks.
 
+Bash scripting  
+  What is bash scripting
+    Bash scripting is a way to automate tasks on a Unix-like operating system, such as Linux or macOS, using a programming language called Bash
+  How to write a simple bash script
+    Choose a text editor: Select a text editor, such as vi, vim, or kwrite, to create and edit your script file. Make sure to save the file with a .sh extension, for example, myscript.sh.
+    Add the shebang: Begin your script with the shebang line, which specifies the interpreter that should be used to run the script. In this case, it’s #!/bin/bash. This line tells the system to use the Bash shell to execute the script.
+    Write your script: Use Bash syntax to write your script. For example, you can use variables, conditional statements, loops, and commands to perform tasks.
+    Use variables: Declare and assign values to variables using the = operator. For example: MY_VAR="Hello World".
+    Use commands: Execute system commands using the command syntax. For example: echo "Hello World" or ls -l.
+    Use control structures: Use if statements, for loops, and while loops to control the flow of your script.
+    Make the script executable: Use the chmod command to set the execute permission on your script file. For example: chmod +x myscript.sh.
+    Run the script: Execute your script by running it with the ./ prefix, followed by the script name. For example: ./myscript.sh.
+  The follow bash key commands
+    Navigation
+    Ctrl+U: Discard the current command without executing it and move to a new line, saving it in a buffer for later recall with Ctrl+Y.
+    Ctrl+X, Ctrl+E: Open the current command line in a visual editor (e.g., vi or vim) for editing.
+    Ctrl+Left/Right Arrow: Move the cursor one word left/right.
+    Ctrl+Shift+V: Paste from the clipboard.
+    Ctrl+Y: Paste from the cut buffer.
+    Process Management
+    ps: Display information about current running processes.
+    kill: Send a signal to a process (e.g., -9 for SIGKILL).
+    killall: Send a signal to all processes matching a name.
+    File Management
+    du: Display disk usage (options: -h for human-readable format, -s for total size only).
+    Editing
+    cat: Display file contents (option: -n for numbered lines).
+    Ownership and Permissions
+    chown: Change file ownership (option: -R for recursive mode).
+    Searching
+    grep: Search for patterns in files (options: -i for case-insensitive search, -r for recursive search, -l for displaying only file names).
+    History
+    history: Manage command history (options: -c for clearing history, -w for writing history to file).
+    Miscellaneous
+    echo: Display text or variables (useful for generating output messages, displaying variable values, or in Bash scripts).
+    Customization
+    Aliases: Create custom commands (abbreviations) for frequently used commands or sequences.
+    Initialization
+    bind -P: List all shortcuts in the current Bash shell (persistent across sessions).
+    Scripting
+    & (ampersand): Run a command in the background.
+    
+
 Git commands
 •Initialize Repository:bash -[git init]
 •Configure Git:bash -[git config --global user.name "Your Name"]
