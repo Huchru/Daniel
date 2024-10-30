@@ -132,7 +132,28 @@ Bash scripting
     bind -P: List all shortcuts in the current Bash shell (persistent across sessions).
     Scripting
     & (ampersand): Run a command in the background.
-
+System Monitoring
+   System monitoring is a surveillance process that tracks measurable events and/or outputs of a system, often referred to as a reference model that specifies a reasonable good behavior.
+  Health Checks
+    show system uptime: Displays the amount of time the system has been operational since the last downtime.
+    show logs: Views both active and inactive system event logs.
+    show crash list: Checks the crash log to determine if any software tasks have restarted on the system.
+    show alarm outstanding all and show alarm all: Check current alarms to verify system status.
+    show alarm statistics: Views system alarm statistics to gain an overall picture of the system’s alarm history.
+  Interactive Top Commands
+    Enter or Space: Immediately refreshes the display.
+    k key: Kills a process by entering its PID.
+    h command: Displays help, including available commands and options.
+  Other Commands
+    top: Displays a list of running processes, including CPU usage, memory usage, and other system metrics.
+    atop: Similar to top, but provides more detailed information and can save raw performance data to a file.
+    htop: An interactive system monitor that supports scrolling and mouse interaction.
+    glances: A system monitoring tool that displays various system metrics, including sensors data, disk usage, network activity, and more.
+    sysgauge: A command-line utility for monitoring system performance, including CPU usage, memory usage, disk space, and network activity.
+  Additional Tools
+    nmon: A command-line tool for monitoring system resources, including CPU usage, memory usage, and disk I/O.
+    nethogs: A command-line tool for monitoring network traffic and identifying bandwidth hogs.
+    mytop: A tool for monitoring MySQL performance, displaying information such as query execution times and lock wait times.
 
     
 
