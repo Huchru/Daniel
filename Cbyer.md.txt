@@ -134,26 +134,32 @@ Bash scripting
     & (ampersand): Run a command in the background.
 System Monitoring
    System monitoring is a surveillance process that tracks measurable events and/or outputs of a system, often referred to as a reference model that specifies a reasonable good behavior.
-  Health Checks
-    show system uptime: Displays the amount of time the system has been operational since the last downtime.
-    show logs: Views both active and inactive system event logs.
-    show crash list: Checks the crash log to determine if any software tasks have restarted on the system.
-    show alarm outstanding all and show alarm all: Check current alarms to verify system status.
-    show alarm statistics: Views system alarm statistics to gain an overall picture of the system’s alarm history.
-  Interactive Top Commands
-    Enter or Space: Immediately refreshes the display.
-    k key: Kills a process by entering its PID.
-    h command: Displays help, including available commands and options.
-  Other Commands
-    top: Displays a list of running processes, including CPU usage, memory usage, and other system metrics.
-    atop: Similar to top, but provides more detailed information and can save raw performance data to a file.
-    htop: An interactive system monitor that supports scrolling and mouse interaction.
-    glances: A system monitoring tool that displays various system metrics, including sensors data, disk usage, network activity, and more.
-    sysgauge: A command-line utility for monitoring system performance, including CPU usage, memory usage, disk space, and network activity.
-  Additional Tools
-    nmon: A command-line tool for monitoring system resources, including CPU usage, memory usage, and disk I/O.
-    nethogs: A command-line tool for monitoring network traffic and identifying bandwidth hogs.
-    mytop: A tool for monitoring MySQL performance, displaying information such as query execution times and lock wait times.
+Based on the provided search results, here are some system monitoring commands:
+
+Health Checks
+  show system uptime: Checks the amount of time the system has been operational since the last downtime.
+  show logs: Views both active and inactive system event logs.
+  show crash list: Checks the crash log to determine if any software tasks have restarted on the system.
+  show alarm outstanding all and show alarm all: Displays current alarms to verify system status.
+  show alarm statistics: Views system alarm statistics to gain an overall picture of the system’s alarm history.
+Interactive Top Commands
+  Enter and Space: Immediately refreshes the display.
+  k key: Kills a process.
+  h command: Displays help.
+System Monitoring Tools
+  top: A traditional system monitoring command that displays running processes, CPU usage, memory usage, and more.
+  atop: Similar to top, but with additional features such as disk usage and network activity monitoring.
+  htop: An interactive system monitor that supports scrolling and mouse interaction.
+  glances: A system monitoring tool that displays sensors data, disk usage, network activity, and more.
+  bashtop: A system monitoring tool that provides a curses-based interface for monitoring system resources.
+Other Commands
+  ps ax: Lists all processes currently running on the system, including processes owned by other users.
+  iostat: Reports CPU and disk I/O statistics, including idle percentage.
+  mytop: Monitors MySQL performance and keeps refreshing itself like the watch command.
+Additional Tools
+  SysGauge: A system and performance monitoring utility that allows monitoring of CPU usage, memory usage, disk space usage, disk activities, and network activities.
+  Netdata: A distributed real-time, health monitoring platform for systems, hardware, containers, and applications.
+
 
     
 
