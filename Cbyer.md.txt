@@ -159,6 +159,20 @@ Other Commands
 Additional Tools
   SysGauge: A system and performance monitoring utility that allows monitoring of CPU usage, memory usage, disk space usage, disk activities, and network activities.
   Netdata: A distributed real-time, health monitoring platform for systems, hardware, containers, and applications.
+Commands
+Journalctl is a command-line utility in Linux systems, part of the systemd suite, used to view and manipulate system logs collected by the systemd-journald service. 
+Here are some key features and uses of journalctl:
+    Log viewing: journalctl displays logs in a format similar to traditional syslog, with each line showing the date, hostname, process name, and log message.
+    Paging and filtering: Use various options (e.g., -u, -b, -k, -p) to filter logs by:
+        Service (e.g., journalctl -u ssh for SSH logs)
+        Boot session (e.g., journalctl -b 0 for current boot session)
+        Log level (e.g., journalctl -p 4..6 for warning, notice, and info logs)
+        Time range (e.g., journalctl --since "2022-02-28 00:00:00" --until "2022-02-28 23:00:00" for logs within a specific time interval)
+    Navigation and search: journalctl’s output is piped to the less command, allowing you to navigate and search logs using standard less key bindings.
+    Log cleaning and management: journalctl offers options to:
+        Remove archived journal files based on size (--vacuum-size), time (--vacuum-time), or number of files (--vacuum-files)
+        Display disk usage information (journalctl --disk-usage)
+    Integration with systemd: journalctl is tightly integrated with systemd, allowing you to monitor and analyze logs from various systemd services and components.
 
 
     
