@@ -174,8 +174,79 @@ Here are some key features and uses of journalctl:
         Display disk usage information (journalctl --disk-usage)
     Integration with systemd: journalctl is tightly integrated with systemd, allowing you to monitor and analyze logs from various systemd services and components.
 
+Example of Journalctl
+  isplaying all logs: journalctl
+  (This will display all logs from all services and programs, including system logs, kernel logs, and application logs.)
 
-    
+  Filtering by service: journalctl -u apache.service
+  (This will display only logs related to the Apache web server service.)
+
+  Filtering by date and time: journalctl --since "2022-02-28 00:00:00" --until "2022-02-28 23:00:00"
+  (This will display logs generated between 00:00 and 23:00 on February 28, 2022.)
+
+  Filtering by priority: journalctl -p err
+  (This will display only logs with a priority of “error” or higher.)
+
+  Following new log entries: journalctl -f
+  (This will display new log entries as they are added, similar to the tail command.)
+
+  Displaying kernel logs: journalctl -k
+  (This will display only kernel logs, including system boot messages and kernel errors.)
+
+  Displaying logs from a specific boot: journalctl -b -1
+  (This will display logs from the most recent system boot.)
+
+  Filtering by message content: journalctl -g "error"
+  (This will display logs containing the string “error” in the message text.)
+
+  Displaying logs in JSON format:journalctl -o json-pretty
+  (This will display logs in a JSON format with indentation and formatting.)
+
+  Vacuuming journal logs: journalctl --vacuum-size=1G
+  (This will remove older logs to free up disk space, keeping only the most recent 1GB of logs.)
+
+  These are just a few examples of the many ways you can use journalctl to filter and display system logs.   
+
+Step-by-step guide on how to monitor system resource usage and check logs for potential issues.
+Step 1: Access Resource Monitor
+  On Windows:
+    Press the Windows key + R to open the Run dialog box.
+    Type resmon and press Enter to launch Resource Monitor.
+  On Linux:
+    Open a terminal and use the command top or htop to monitor system resource usage.
+    Alternatively, use glances or sysdig for a more detailed view.
+Step 2: Analyze Resource Usage
+  In Resource Monitor (Windows):
+    Observe the real-time usage of CPU, memory, disk, and network resources.
+    Identify any processes or applications consuming excessive resources.
+  In top or htop (Linux):
+    Sort processes by CPU or memory usage to identify resource-intensive applications.
+    Use filters to focus on specific processes or resources.
+Step 3: Check Event Logs
+  On Windows:
+    Open Event Viewer (Press Windows key + R, type eventvwr, and press Enter).
+    Navigate to the “Windows Logs” section.
+    Filter events by date, severity, or category to identify potential issues.
+  On Linux:
+  Use the journalctl command to view system logs.
+  Filter logs by date, priority, or message to identify potential issues.
+Step 4: Review Log Data
+  In Event Viewer (Windows):
+    Review log entries for errors, warnings, and informational messages.
+    Look for patterns or recurring issues.
+  In journalctl (Linux):
+    Review log entries for errors, warnings, and informational messages.
+    Use the --since and --until options to filter logs by date and time.
+Step 5: Troubleshoot and Optimize
+  Based on your analysis, identify potential issues and troubleshoot accordingly.
+  Optimize system resource usage by:
+    Closing unnecessary applications or background processes.
+    Adjusting system settings or configurations.
+    Upgrading hardware or software as needed.
+Step 6 :repeat
+  Regularly monitor system resource usage and log data to catch potential issues early.
+  Use filters and sorting options to focus on specific areas of interest.
+  Consult system documentation and online resources for specific guidance on monitoring and troubleshooting.
 
 Git commands
 •Initialize Repository:bash -[git init]
