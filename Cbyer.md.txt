@@ -248,6 +248,28 @@ Step 6 :repeat
   Use filters and sorting options to focus on specific areas of interest.
   Consult system documentation and online resources for specific guidance on monitoring and troubleshooting.
 
+System security
+  Defense in Depth (DiD): Protect the system by applying several layers of security. This principle is similar to peeling an onion, where each layer provides an additional barrier against attacks. A single broken defense can be compensated for by the next layer.
+  Authentication: Verify that users are who they claim to be. Implement authentication features such as password systems to ensure proper access control.
+  Authorization: Define what an authenticated user or entity can do. Use authorization to restrict access to resources and ensure that users only have access to what they need.  
+  Availability: Ensure that systems and resources are consistently accessible and operational to support business processes and meet user needs.
+  Confidentiality: Protect sensitive information from unauthorized access, disclosure, or use.
+  Non-repudiation: Ensure that actions taken by users or systems cannot be denied or disputed.
+  Integrity: Maintain the accuracy, completeness, and consistency of data and systems.
+  Risk Analysis: Identify potential threats and vulnerabilities to determine the likelihood and impact of security incidents. This helps to prioritize security measures and allocate resources effectively.
+File Permissions
+  it to control access to files and directories, ensuring that only authorized users and processes can read, write, execute, or modify them.
+Usage of chmod, chown, Ls -l
+  Chmod: this is a command in Linux used to change the access permissions of a file or directory. It allows you to modify the read (r), write (w), and execute (x) permissions for the owner, group, and others.
+  Chown: this  is a command in Linux used to change the owner or group of a file or directory.
+  ls -l: is a command in Linux used to display a long listing of files and directories, including their permissions, ownership, and timestamps.
+Step in creating a file with chmood +X
+  Open a terminal and navigate to the directory where the file is located using the cd command.
+  Identify the file you want to make executable. For example, let’s say the file is named myscript.sh.
+  Use the chmod command with the +x option to set the execute permission. The syntax is:
+
+
+
 Git commands
 •Initialize Repository:bash -[git init]
 •Configure Git:bash -[git config --global user.name "Your Name"]
