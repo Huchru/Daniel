@@ -267,6 +267,9 @@ Step in creating a file with chmood +X
   Open a terminal and navigate to the directory where the file is located using the cd command.
   Identify the file you want to make executable. For example, let’s say the file is named myscript.sh.
   Use the chmod command with the +x option to set the execute permission. The syntax is:
+User Management
+  Adduser
+    
 
 
 
