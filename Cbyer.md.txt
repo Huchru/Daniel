@@ -269,6 +269,28 @@ Step in creating a file with chmood +X
   Use the chmod command with the +x option to set the execute permission. The syntax is:
 User Management
   Adduser
+
+Octal Notion
+  Octal Notion is a number system with a base of 8, using the digits 0 to 7 to represent numbers.
+  It is commonly used in computing, particularly in file permissions and system configuration files.
+  Conversion
+    Binary numbers can be converted to octal numbers by grouping them into sets of three bits and replacing each set with the corresponding octal digit (0-7).
+    Octal numbers can be converted to decimal numbers by multiplying each digit by the corresponding power of 8 (8^0, 8^1, 8^2, …).
+    Octal numbers can be converted to hexadecimal numbers by converting each octal digit to its hexadecimal equivalent (0-7 becomes 0-7).
+  File Permissions
+    In Unix-like systems, file permissions are represented using octal notation. Each digit in the three-digit code represents the permissions for the owner, group, and others, respectively.
+    The permissions are:
+      4: read
+      2: write
+      1: execute
+      0: none
+      Example: 644 means: + Owner has read and write permissions (6) + Group has read permission (4) + Others have no permissions (0)
+
+  Advantages
+    Octal notation is more compact and easier to read than binary notation.
+    It is simpler to use than hexadecimal notation for file permissions and system configuration.
+  Disadvantages
+    Octal notation is less widely used than decimal, hexadecimal, and binary notations. * It can be less intuitive for users unfamiliar with the system.
     
 
 
