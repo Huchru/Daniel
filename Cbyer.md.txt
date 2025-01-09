@@ -292,9 +292,6 @@ Octal Notion
   Disadvantages
     Octal notation is less widely used than decimal, hexadecimal, and binary notations. * It can be less intuitive for users unfamiliar with the system.
     
-
-
-
 Git commands
 •Initialize Repository:bash -[git init]
 •Configure Git:bash -[git config --global user.name "Your Name"]
@@ -316,6 +313,9 @@ bash -[git add .]
 •Tag a Commit:bash -[git tag -a v1.0 -m "message"]
 •Reset Commits:bash -[git reset --soft HEAD~1]
 bash -[git reset --hard HEAD~1]
+
+Privacy and Security
+ Government-
 
 Random codes 
 traceroute 
